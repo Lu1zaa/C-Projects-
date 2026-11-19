@@ -1,0 +1,36 @@
+/* User enters a mark. Program displays the grade*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int mark;
+
+    cout << "Please enter your mark: ";    /*Program prompts the user for input before calculating the grade*/
+    cin >> mark;
+
+    if(mark >= 70)        
+    {
+        cout << "Final Grade: First";
+    }
+    else if(mark >= 60)
+    {
+        cout << "Final Grade: 2:1";
+    }
+    else if(mark >= 50)
+    {
+        cout << "Final Grade: 2:2";
+    }
+    else if(mark >= 40)
+    {
+        cout << "Final Grade: Third";
+    }
+    else
+    {
+        cout << "Final Grade: Fail";
+    }
+
+    return 0;
+}
